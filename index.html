@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Time Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Time Timer</h1>
+
+<div class="clock">
+    <div class="clock__numbers"></div>
+    <img src="img/clock.png" alt="timer" class="clock__img"/>
+    <div class="clock__circular-progress"></div>
+    <div class="minute">
+        <div class="minutes"></div>
+    </div>
+</div>
+
+<audio id="stop">
+    <source src="./sound/sound1.mp3" type="audio/mp3">
+</audio>
+<audio id="sound">
+    <source src="./sound/sound2.mp3" type="audio/mp3">
+</audio>
+
+
+<div class="btns">
+    <button class="btn btn-start">Start</button>
+    <button class="btn btn-pause">Pause</button>
+    <button class="btn btn-stop">Stop</button>
+</div>
+
+<div class="time"></div>
+
+<script src="js/variable.js"></script>
+<script src="js/setRealTime.js"></script>
+<script src="js/manageTimer.js"></script>
+<script src="js/createTimer.js"></script>
+<script src="js/addNumbersClock.js"></script>
+</body>
+</html>
